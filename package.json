@@ -23,6 +23,7 @@
     "@electron/fuses": "^1.7.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "@vitejs/plugin-vue": "^5.1.4",
     "electron": "^33.0.2",
     "electron-squirrel-startup": "^1.0.1",
     "eslint": "^8.0.1",
@@ -36,5 +37,12 @@
     "name": "Cupid Valentine",
     "email": "westerngod@126.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@vue/reactivity": "^3.5.12",
+    "@vue/runtime-core": "^3.5.12",
+    "@vue/runtime-dom": "^3.5.12",
+    "@vue/shared": "^3.5.12",
+    "vue": "^3.5.12"
+  }
 }
