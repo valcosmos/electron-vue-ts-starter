@@ -3,13 +3,11 @@ import type { Component } from 'vue'
 
 import {
   BookOutline as BookIcon,
-  PersonOutline as PersonIcon,
-  WineOutline as WineIcon,
 } from '@vicons/ionicons5'
 import { useIpcRenderer } from '@vueuse/electron'
 
 import { NIcon } from 'naive-ui'
-import { defineComponent, h, ref } from 'vue'
+import { h, ref } from 'vue'
 
 const ipcRenderer = useIpcRenderer()
 

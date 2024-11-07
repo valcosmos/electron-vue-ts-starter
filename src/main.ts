@@ -1,4 +1,5 @@
 import path from 'node:path'
+import process from 'node:process'
 import { app, BrowserWindow, ipcMain } from 'electron'
 import start from 'electron-squirrel-startup'
 // import puppeteer from 'puppeteer'
