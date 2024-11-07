@@ -21,7 +21,7 @@ const config: ForgeConfig = {
           owner: 'valcosmos',
           name: 'electron-vue-ts-starter',
         },
-        prerelease: true,
+        draft: true,
       },
     },
   ],
