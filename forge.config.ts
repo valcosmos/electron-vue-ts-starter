@@ -22,6 +22,8 @@ const config: ForgeConfig = {
           name: 'electron-vue-ts-starter',
         },
         draft: true,
+        prerelease: false,
+        generateReleaseNotes: true,
       },
     },
   ],
