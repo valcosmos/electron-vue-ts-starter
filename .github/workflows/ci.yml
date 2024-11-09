@@ -27,6 +27,10 @@ jobs:
         with:
           node-version: 20
           cache: pnpm
+      - name: Enable and use latest pnpm
+        run: |
+          corepack enable pnpm
+          corepack use pnpm@latest
       - name: Install dependencies
         run: pnpm install
       - name: publish
