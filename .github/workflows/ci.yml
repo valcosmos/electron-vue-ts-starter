@@ -13,11 +13,11 @@ jobs:
       matrix:
         settings:
           - host: windows-latest
-            publish: yarn run publish
+            publish: pnpm run publish
           - host: ubuntu-latest
-            publish: yarn run publish
+            publish: pnpm run publish
           - host: macos-latest
-            publish: yarn run publish
+            publish: pnpm run publish
     name: stable - ${{ matrix.settings.host }} - node@20
     runs-on: ${{ matrix.settings.host }}
     steps:
@@ -26,9 +26,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn
+          cache: pnpm
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
       - name: publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
